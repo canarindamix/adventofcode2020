@@ -25,7 +25,6 @@ class ExpenseReport {
                 lines.forEach() { item3 ->
                     if (Integer.parseInt(item1) + Integer.parseInt(item2) + Integer.parseInt(item3) == 2020){
                         result = Integer.parseInt(item1) * Integer.parseInt(item2) * Integer.parseInt(item3)
-
                     }
                 }
             }
