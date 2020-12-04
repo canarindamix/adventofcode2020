@@ -10,6 +10,16 @@ class TobogganTrajectory {
         println  "Phase 1: Answer is " + numberOfTreesEncountered
     }
 
+    void phase2(){
+        Long treesOnPath1 = findNbOfTreesOnPath(1,1)
+        Long treesOnPath2 = findNbOfTreesOnPath(3,1)
+        Long treesOnPath3 = findNbOfTreesOnPath(5,1)
+        Long treesOnPath4 = findNbOfTreesOnPath(7,1)
+        Long treesOnPath5 = findNbOfTreesOnPath(1,2)
+
+        println  "Phase 2: Answer is " + treesOnPath1 * treesOnPath2 * treesOnPath3 * treesOnPath4 * treesOnPath5
+    }
+
     private Integer findNbOfTreesOnPath(Integer stepsToTheRight, Integer stepsDown) {
         Integer numberOfTreesEncountered = 0
         Integer startingPointForNextRow = 0
@@ -27,13 +37,5 @@ class TobogganTrajectory {
         return numberOfTreesEncountered
     }
 
-    void phase2(){
-        Long treesOnPath1 = findNbOfTreesOnPath(1,1)
-        Long treesOnPath2 = findNbOfTreesOnPath(3,1)
-        Long treesOnPath3 = findNbOfTreesOnPath(5,1)
-        Long treesOnPath4 = findNbOfTreesOnPath(7,1)
-        Long treesOnPath5 = findNbOfTreesOnPath(1,2)
 
-        println  "Phase 2: Answer is " + treesOnPath1 * treesOnPath2 * treesOnPath3 * treesOnPath4 * treesOnPath5
-    }
 }
