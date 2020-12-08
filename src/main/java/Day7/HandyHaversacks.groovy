@@ -25,7 +25,7 @@ class HandyHaversacks {
         }
 
         rules.keySet().forEach(){String colour ->
-            if (processShiny(rules.get(colour),rules,false)){
+            if (processColor(rules.get(colour),rules,false)){
                 shinyCount++
             }
         }
@@ -77,7 +77,7 @@ class HandyHaversacks {
             if (numberAndColor!="no other"){
                 int numberOfBags = Integer.valueOf(numberAndColor.split(' ')[0])
                 while(numberOfBags > 0){
-                    Node child = new Node(node,numberAndColor.split(' ')[1] + ' ' + numberAndColor.split(' ')[2])
+                    new Node(node,numberAndColor.split(' ')[1] + ' ' + numberAndColor.split(' ')[2])
                     numberOfBags = numberOfBags - 1
                 }
             }
